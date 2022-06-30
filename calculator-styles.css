@@ -28,7 +28,7 @@ border: 1px;
 .display {
     font-size: 100px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: flex-end;
     flex-wrap: wrap;
     background-color: whitesmoke;
@@ -42,15 +42,28 @@ border: 1px;
     border-color: rgb(76, 76, 76);
     padding-right: 20px;
     
-}
-
-.displayText {
-    display: flex;
-    max-width: 350px;
     
 }
 
+.displayText1 {
+    display: flex;
+    max-width: 350px;
+    font-size:5vh;
+    align-items: flex-end;
+    text-overflow:clip;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
 
+.displayText2 {
+    display: flex;
+    max-width: 350px;
+    font-size: 2vh;
+    align-items: flex-start;
+    padding-top: 20px;
+    
+}
 
 .buttons {
     border: 5px;
