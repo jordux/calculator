@@ -23,6 +23,7 @@ function multiplyFunction (a, b) {
 }
 
 function divideFunction (a, b) {
+        
         return firstOperand.textContent = parseInt(a) / parseInt(b)
 }
 
@@ -41,6 +42,9 @@ function operate(currentOperator, a, b) {
             return multiplyFunction(a, b)
 
     } else if (currentOperator === '/') {
+        if(a === '0' || b === '0') {
+                return firstOperand.textContent = "NAH HOMIE"
+        } 
             return divideFunction(a, b)
     } 
 }
